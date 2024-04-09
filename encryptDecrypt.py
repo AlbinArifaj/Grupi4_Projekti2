@@ -39,4 +39,4 @@ characterToColor={
     '8':(153,69,55),
     '9':(173,79,55),
 }
-colorToCharacter = {v: k for k, v in characterToColor.items()}
+colorToCharacter = {v: k for k, v in characterToColor.items()};
