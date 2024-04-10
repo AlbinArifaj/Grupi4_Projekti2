@@ -40,3 +40,8 @@ characterToColor={
     '9':(173,79,55),
 }
 colorToCharacter = {v: k for k, v in characterToColor.items()};
+def encryptImage(text,image):
+    text.upper()
+    image=Image.open(image)
+    width, height= image.size
+    pixels=image.load()
