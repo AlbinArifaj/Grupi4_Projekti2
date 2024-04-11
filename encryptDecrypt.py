@@ -45,3 +45,16 @@ def encryptImage(text,image):
     image=Image.open(image)
     width, height= image.size
     pixels=image.load()
+    if len(text) >width *height:
+        print("Text too long")
+
+    index = 0
+    encrypted_text =''
+   for x in range(height):
+    for y in range(width):
+        if index <len(text):
+            character = text[index]
+            color = characterToColor[character]
+            pixels[x, y] = color
+            index += 1
+            encrypted_text += character
