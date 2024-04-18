@@ -39,6 +39,7 @@ characterToColor={
     '8':(153,69,55),
     '9':(173,79,55),
 }
+
 colorToCharacter = {v: k for k, v in characterToColor.items()};
 def encryptImage(text,image):
     text.upper()
@@ -48,7 +49,7 @@ def encryptImage(text,image):
     if len(text) >width *height:
         print("Text too long")
 
-    index = 0
+    index = 0;
     encrypted_text =''
     for x in range(height):
      for y in range(width):
@@ -65,7 +66,8 @@ def encryptImage(text,image):
 
      else:
          continue
-     break
+     break;
+
      print("Encrypted text:", encrypted_text)
      image.save('encrypted.png')
      print("Encrypted image saved")
@@ -83,6 +85,8 @@ for y in range(height):
             decryptText += character
         else:
             decryptText +=""
+
+
 print("Decrypted image saved")
 return decryptText
     def main():
@@ -90,4 +94,4 @@ return decryptText
         textEncryptedUppercase = textEncrypt.upper()
         image = "5LYzTBVoS196gvYvw3zjwBljwV2tMj4gpWc8vE-5S20.jpg"
 
-        encryptImage(textEncryptedUppercase, image)
+        encryptImage(textEncryptedUppercase, image);
