@@ -74,7 +74,17 @@ def encryptImage(text,image):
         image = Image.open(image)
         width, height = image.size
         pixels = image.load()
-
+        decryptText = "";
+for y in range(height):
+    for x in range(width):
+        color = pixels[x, y]
+        character = colorToCharacter.get(color,'')
+        if character is not None:
+            decryptText += character
+        else:
+            decryptText +=""
+print("Decrypted image saved")
+return decryptText
     def main():
         textEncrypt = "pls1 go somewhere"
         textEncryptedUppercase = textEncrypt.upper()
