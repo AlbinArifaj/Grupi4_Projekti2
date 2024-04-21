@@ -76,7 +76,10 @@ def encryptImage(text, image):
         for x in range(width):
             if index < len(text):
                 character = text[index]
-                color = characterToColor[character]
+                if character  in characterToColor:
+                    color = characterToColor[character]
+                else:
+                    color = whiteColor
                 index += 1
                 encrypted_text += character
             else:

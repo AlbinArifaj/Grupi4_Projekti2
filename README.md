@@ -14,7 +14,7 @@ Encryption:
 
 We achieve this by mapping each character to a distinct color.
 
-For example, we can assign a character to a color A = (0, 0, 0) then we open the image and get the width and height and we load the pixels of the image into a variable which allows direct access to tbhe idividual pixels  at the specified pixels the color changes to the corresponding color of the character that is used in which case it is black.The rest of the image, that doesn't contain any text we mapped using the white color (255,255,255).
+For example, we can assign a character to a color A = (0, 0, 0) then we open the image and get the width and height and we load the pixels of the image into a variable which allows direct access to the individual pixels  at the specified pixels the color changes to the corresponding color of the character that is used in which case it is black.The rest of the image, that doesn't contain any text we mapped using the white color (255,255,255).
 
 
 Decryption:
